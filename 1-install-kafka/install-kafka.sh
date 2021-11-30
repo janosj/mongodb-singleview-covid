@@ -22,7 +22,7 @@ read -p "Enter MongoDB Connect String: " MDB_CONNECT_URI_RAW
 MDB_CONNECT_URI=${MDB_CONNECT_URI_RAW/&/\\&}
 
 # Set file locations
-KAFKA_VER=kafka_2.13-2.8.0
+KAFKA_VER=kafka_2.13-3.0.0
 KFILE=$KAFKA_VER.tgz
 DOWNLOADS_DIR=$HOME/downloads
 INSTALL_DIR=$HOME
@@ -49,7 +49,7 @@ echo "OS type is $OSTYPE."
 echo
 if [ ! -f "$DOWNLOADS_DIR/$KFILE" ]; then
   echo "Kafka not found locally, downloading now ..."
-  curl https://downloads.apache.org/kafka/2.8.0/$KFILE --output $DOWNLOADS_DIR/$KFILE
+  curl https://downloads.apache.org/kafka/3.0.0/$KFILE --output $DOWNLOADS_DIR/$KFILE
 else
   echo "Found previously downloaded Kafka, using that ..."
 fi
