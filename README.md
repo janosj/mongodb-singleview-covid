@@ -12,37 +12,39 @@ Data is streamed in from the source systems (a json data set for this demo) usin
 
 ## Prerequisites
 
-Docker Desktop
+**Docker Desktop**
 
-The MongoDB Kafka Connector Quick Start Sandbox. See [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/) for instructions on downloading this Sandbox. 
+The **MongoDB Kafka Connector Quick Start Sandbox**. See [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/) for download instructions. 
 
-Optional: MongoDB Atlas. In the course of this demo, data published to Kafka will be persisted in a MongoDB cluster. The Sandbox includes a MongoDB cluster that can be used for this purpose, but by using Atlas, you will additionally be able to visualize this data using MongoDB Charts (as featured in the demo). 
+**Python**. The Kafka data producer is written in Python. 
 
-Optional: MongoDB Compass. You need some way to look at the data that is written to Mongo. Compass is a great option. You could also use the MongoDB shell, or the Data Explorer within the Atlas UI. 
+Optional: **MongoDB Atlas**. In the course of this demo, data published to Kafka will be persisted in a MongoDB cluster. The Sandbox includes a MongoDB cluster that can be used for this purpose, but by using Atlas, you will additionally be able to visualize this data using MongoDB Charts (as featured in the demo). 
+
+Optional: **MongoDB Compass**. You need some way to look at the data that is written to Mongo. Compass is a great option. You could also use the MongoDB shell, or the Data Explorer within the Atlas UI. 
 
 ## Running the Demo
 
-### 1. Download the MongoDB Kafka Connector Quickstart sandbox. 
+### 1. Download the Sandbox
 
-See [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/).
+Intructions for downloading the MongoDB Kafka Connector Quickstart Sandbox can be found [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/)
 
-### 2. Launch your MongoDB Atlas cluster (optional).
+### 2. Launch your MongoDB Atlas cluster (optional)
 
-If using Atlas, make sure your cluster is up and running. Alternatively, you can use the MongoDB instance packaged in the Quickstart sandbox (but you won't be able to run the Charts portion of the demo).
+If using Atlas, make sure your cluster is up and running. Alternatively, you can use the MongoDB instance packaged in the Sandbox (but you won't be able to run the Charts portion of the demo).
 
 ### 3. Run the Scripts.
 
 Run the scripts in order to:
 
-1: Start the MongoDB Kafka Connector Quickstart sandbox.
+1. Start the MongoDB Kafka Connector Quickstart sandbox.
 
-2: Add the MongoDB sink connector.
+2. Add the MongoDB sink connector.
 
-3: Start the data feed. The data feed reads data from a JSON file and publishes it to a Kafka topic. From there, the connector will propogate the events to the configured MongoDB cluster.
+3. Start the data feed. The data feed reads data from a JSON file and publishes it to a Kafka topic. From there, the connector will propogate the events to the configured MongoDB cluster.
 
-4: Examine the data using the MongoDB Compass. Review the video for notable points.. 
+4. Examine the data using the MongoDB Compass. Review the video for notable points.
 
-5: Examine the data using MongoDB Charts (only available in MongoDB Atlas). The video walks through the chart creation process.
+5. Examine the data using MongoDB Charts (only available in MongoDB Atlas). The video walks through the chart creation process.
 
-
+6. Tear down your environment. Your Atlas cluster must be brought down separately (if desired).
 
