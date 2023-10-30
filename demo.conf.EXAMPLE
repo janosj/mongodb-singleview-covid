@@ -1,0 +1,18 @@
+# Uses the Sandbox from the MDB Kafka Connector Quick Start:
+# https://www.mongodb.com/docs/kafka-connector/current/quick-start/
+# Note the download command:
+# git clone https://github.com/mongodb-university/kafka-edu.git
+
+# Set SANDBOX_HOME to the base directory of that sandbox:
+SANDBOX_HOME="$HOME/myStuff/github/mongodb-developer"
+
+KAFKA_TOPIC=COVID
+DB=COVID
+COLLECTION=cases
+
+# Sinks data from Kafka to the MDB instance running in the sandbox:
+# MONGODB_URI="mongodb://mongo1:27017/?replicaSet=rs0"
+
+# Sinks data from Kafka to MongoDB Atlas:
+MONGODB_URI="mongodb+srv://DBUSER:DBPASSWD@FQDN/covid"
+
