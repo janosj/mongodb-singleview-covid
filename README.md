@@ -18,21 +18,25 @@ The **MongoDB Kafka Connector Quick Start Sandbox**. See [here](https://www.mong
 
 **Python**. The Kafka data producer is written in Python. 
 
-Optional: **MongoDB Atlas**. In the course of this demo, data published to Kafka will be persisted in a MongoDB cluster. The Sandbox includes a MongoDB cluster that can be used for this purpose, but by using Atlas, you will additionally be able to visualize this data using MongoDB Charts (as featured in the demo). 
+Optional: **MongoDB Atlas**. In the course of this demo, data published to Kafka will be persisted in a MongoDB cluster. The Sandbox includes a MongoDB cluster that can be used for this purpose, but by using Atlas you will additionally be able to visualize the data using MongoDB Charts (as featured in the demo). 
 
-Optional: **MongoDB Compass**. You need some way to look at the data that is written to Mongo. Compass is a great option. You could also use the MongoDB shell, or the Data Explorer within the Atlas UI. 
+Optional: **MongoDB Compass**. You need some way to look at the data that is written to Mongo. Compass is a great option. Alternatively, you could use the Data Explorer within the Atlas UI, or even the MongoDB Shell.
 
 ## Running the Demo
 
 ### 1. Download the Sandbox
 
-Intructions for downloading the MongoDB Kafka Connector Quickstart Sandbox can be found [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/)
+Intructions for downloading the MongoDB Kafka Connector Quickstart Sandbox can be found [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/).
 
 ### 2. Launch your MongoDB Atlas cluster (optional)
 
 If using Atlas, make sure your cluster is up and running. Alternatively, you can use the MongoDB instance packaged in the Sandbox (but you won't be able to run the Charts portion of the demo).
 
-### 3. Run the Scripts.
+### 3. Configure your project settings
+
+Open the *demo.conf* file and adjust your MongoDB connect string. The remaining settings can be left as provided.
+
+### 4. Run the Scripts
 
 Run the scripts in order to:
 
@@ -40,7 +44,7 @@ Run the scripts in order to:
 
 2. Add the MongoDB sink connector.
 
-3. Start the data feed. The data feed reads data from a JSON file and publishes it to a Kafka topic. From there, the connector will propogate the events to the configured MongoDB cluster.
+3. Start the data feed. The data feed reads data from a JSON file and publishes it to a Kafka topic. From there, the connector will propogate the events to the configured MongoDB sink cluster.
 
 4. Examine the data using the MongoDB Compass. Review the video for notable points.
 
