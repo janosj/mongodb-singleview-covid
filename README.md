@@ -34,7 +34,7 @@ If using Atlas, make sure your cluster is up and running. Alternatively, you can
 
 ### 3. Configure your project settings
 
-Open the *demo.conf* file and adjust your MongoDB connect string. The remaining settings can be left as provided.
+Open the *demo.conf* file and adjust your MongoDB connect string and the location of the downloaded sandbox. The remaining settings can be left as provided.
 
 ### 4. Run the Scripts
 
