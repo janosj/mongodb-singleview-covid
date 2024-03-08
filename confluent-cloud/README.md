@@ -2,19 +2,17 @@
 
 This demo originally used MongoDB's Kafka Connector its Quick Start Sandbox. Another approach (used here) is to publish Kafka messages to Confluent, and use Atlas Streams to ingest data from there into Atlas. 
 
-## Prerequisites
-
 ### 1. Launch a Kafka cluster using Confluent Cloud
 
 Messages will be published to this cluster using a Kafka producer.
 
-### 2. Launch an MongoDB Atlas cluster
+### 2. Launch a MongoDB Atlas cluster
 
 Data will be ingested from Confluent into this Atlas cluster using Atlas Streams.
 
 ### 3. Configure Atlas Streams
 
-A stream processing instance needs to be created and started. Configure two connections for the source (Confluent Cloud) and sink (your Atlas cluster). See "Get Started with Atlas Stream Processing [here](https://www.mongodb.com/docs/atlas/atlas-sp/tutorial/).
+A stream processing instance needs to be created and started. Configure two connections for the source (Confluent Cloud) and sink (your Atlas cluster). See "Get Started with Atlas Stream Processing" ([here](https://www.mongodb.com/docs/atlas/atlas-sp/tutorial/)).
 
 ### 4. Configure your project settings
 
