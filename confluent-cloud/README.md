@@ -12,7 +12,7 @@ Data will be ingested from Confluent into this Atlas cluster using Atlas Streams
 
 ### 3. Configure Atlas Streams
 
-A stream processing instance needs to be created and started. Configure two connections for the source (Confluent Cloud) and sink (your Atlas cluster). See "Get Started with Atlas Stream Processing" ([here](https://www.mongodb.com/docs/atlas/atlas-sp/tutorial/)).
+A stream processing instance needs to be created and started. Configure two connections for the source (Confluent Cloud) and sink (your Atlas cluster). See "Get Started with Atlas Stream Processing" ([here](https://www.mongodb.com/docs/atlas/atlas-sp/tutorial/)). `createStreamProcessor.notes` contains the basic aggregation pipeline required for the stream processor to ingest the data from Confluent into Atlas. Note that the connection names must match the names used when you created the connections in the Streams connection registry.
 
 ### 4. Configure your project settings
 

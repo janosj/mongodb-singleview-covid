@@ -1,0 +1,28 @@
+// See the docs for the source document format:
+// https://www.mongodb.com/docs/atlas/atlas-sp/sp-agg-source/#apache-kafka-broker
+let s = {
+   $source: {
+      connectionName: "kafka-cloud",
+      topic: "COVID"
+   }
+}
+
+let z = {
+   $set: {
+      standardDate: "$date"
+   }
+}
+
+let m = {
+   $merge: {
+      into: {
+         connectionName: "atlas-sink",
+         db: "COVID",
+         coll: "cases"
+      }
+   }
+}
+
+
+sp.createStreamProcessor("justatest", [s, z, m])
+
