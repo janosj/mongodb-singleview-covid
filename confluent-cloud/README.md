@@ -1,6 +1,6 @@
 ## Confluent Cloud and MongoDB Atlas Streams
 
-This demo originally used MongoDB's Kafka Connector its Quick Start Sandbox. Another approach is to publish Kafka messages to Confluent, and use Atlas Streams to ingest data from there into Atlas. 
+This demo originally used MongoDB's Kafka Connector its Quick Start Sandbox. Another approach (used here) is to publish Kafka messages to Confluent, and use Atlas Streams to ingest data from there into Atlas. 
 
 ## Prerequisites
 
