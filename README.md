@@ -22,6 +22,8 @@ Optional: **MongoDB Compass**. You need some way to look at the data that is wri
 
 ## Running the Demo
 
+Refer to the confluent-cloud folder if using that approach. 
+
 ### 1. Download the Sandbox
 
 Intructions for downloading the MongoDB Kafka Connector Quickstart Sandbox can be found [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/).
