@@ -16,5 +16,6 @@ echo "Launching Kafka Connector sandbox..."
 
 docker-compose -p mongo-kafka up -d --force-recreate
 
-# TO-DO: add a wait command here, because Connect isn't up immediately.
+echo "Waiting 30 seconds for Kafka Connect to start..."
+sleep 30
 
