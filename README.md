@@ -12,9 +12,7 @@ Data is streamed in from the source systems (a json data set for this demo) usin
 
 ## Prerequisites
 
-**Docker Desktop**
-
-The **MongoDB Kafka Connector Quick Start Sandbox**. See [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/) for download instructions. 
+**Docker Desktop** and the **MongoDB Kafka Connector Quick Start Sandbox** (see [here](https://www.mongodb.com/docs/kafka-connector/current/quick-start/) for download instructions). **Or**, you can host your Kafka cluster in Confluent Cloud - see the *confluent-cloud* folder for additional instructions. 
 
 **Python**. The Kafka data producer is written in Python. 
 
